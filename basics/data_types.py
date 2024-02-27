@@ -1,5 +1,5 @@
 #DATA TYPES IN PYTHON
-# Few built-in data types in python are:
+# Built-in data types in python are:
 
 # Numbers
 a = 5
