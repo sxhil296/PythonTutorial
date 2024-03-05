@@ -26,8 +26,9 @@ print(names)
 print(type(names))
 new_names = names.replace("Eren", "Malik")
 print(new_names)
-position = names.find('Levi') 
-index = names.index("Eren") #raises error if absent
+print(names) #this shows that strings are immutable cause changes didn't occur in the original string but a new copy was formed i.e. new_names
+position = names.find('Levi')  #doesn't give error if absent
+index = names.index("Jay") #raises error if absent i.e. valueError
 
 
 names_list = names.split(', ')
