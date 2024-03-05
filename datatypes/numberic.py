@@ -2,15 +2,25 @@
 
 # Numbers are immutable in Python
 
-
+#whole numbers with no decimal 
 int_number = 4
 print(f"Integer number : {int_number}")
+int(3.14) #3
 
+
+#numbers in decimal form or exponential form
 float_number = 4.2
 print(f"Float number : {float_number}")
+float(3)  #3.00
 
+
+#numbers in the form of i+j
 complex_number=2+3j
 print(f"Complex number : {complex_number}")
+complex(2,3) #2+3j
+
+
+
 
 
 num1 = 10
