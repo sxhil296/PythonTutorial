@@ -7,6 +7,7 @@ In Python, data types represent the kind of values that variables can store. Her
 1. **Integers (`int`)**: Whole numbers, e.g., 5, -10, 100. (Immutable)
 
 2. **Floating-Point Numbers (`float`)**: Decimal numbers, e.g., 3.14, -0.5, 2.0. (Immutable)
+3.  **Complex Numbers (`complex`)** : numbers in the form of 3+2j
 
 ## Sequence Types:
 
