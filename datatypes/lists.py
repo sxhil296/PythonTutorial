@@ -105,7 +105,8 @@ print(list_from_string)
 list_from_string_two = my_string.split()
 print(list_from_string_two)
 
-# list comprehension [expression for item in iterable if condition]
+# list comprehension - a concise and efficient way to create lists in a single line of code
+# Syntax: [expression for item in iterable if condition]
 nums = [1,2,3,4,5,6,7,8]
 squares = [item**2 for item in nums]
 print(squares)
