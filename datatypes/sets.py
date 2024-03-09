@@ -129,3 +129,33 @@ set1 = {1, 2, 3, 4, 5}
 set2 = {3, 4, 5, 6, 7}
 set1.symmetric_difference_update(set2)
 print(set1)
+
+
+
+# FROZENSET
+# - immutable version of a set
+# - methods like add(), remove(), and pop() are not available for frozenset objects.
+# - can perform operations like intersection, union, difference, and symmetric difference, return new frozenset objects rather than modifying the original object
+# - useful in situations where you want to use a set as an element of another set, or as a key in a dictionary.
+
+
+sets_list = [{1, 2, 3}, {2, 3, 4}, {3, 4, 5}]
+frozen_sets = [frozenset(s) for s in sets_list]
+
+common_elements = frozen_sets[0].intersection(*frozen_sets[1:])
+print(common_elements)
+
+set1 = frozenset({1, 2, 3, 4})
+set2 = frozenset({3, 4, 5, 6})
+
+intersection = set1.intersection(set2)
+print(intersection)  # Output: frozenset({3, 4})
+
+union = set1.union(set2)
+print(union)  # Output: frozenset({1, 2, 3, 4, 5, 6})
+
+difference = set1.difference(set2)
+print(difference)  # Output: frozenset({1, 2})
+
+symmetric_difference = set1.symmetric_difference(set2)
+print(symmetric_difference)  # Output: frozenset({1, 2, 5, 6})
