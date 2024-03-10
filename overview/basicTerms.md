@@ -27,3 +27,33 @@
 
 ## literals
 - representative of a fixed value in a program
+
+## statement
+- a statement is a unit of code that the Python interpreter can execute. OR
+- a statement is a single instruction that the Python interpreter can execute
+- it typically performs some action or operation
+```
+# Assignment statement
+x = 10
+
+# Conditional statement
+if x > 5:
+    print("x is greater than 5")
+elif x == 5:
+    print("x is equal to 5")
+else:
+    print("x is less than 5")
+
+# Loop statement
+for i in range(5):
+    print(i)
+
+# Import statement
+import math
+
+# Function definition statement
+def greet(name):
+    print("Hello, " + name)
+
+greet("Alice")
+```
