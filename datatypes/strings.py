@@ -47,6 +47,10 @@ escaped_str1="Emir's Laptop"
 escaped_str2='Emir\'s Laptop'
 raw_str=r'Emir\n Laptop'
 
+str_one = "hello"
+reversed_str_one = str_one[::-1]
+print(reversed_str_one)
+
 
 
 
