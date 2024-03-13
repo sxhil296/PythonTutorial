@@ -83,5 +83,57 @@ else:
     print(f"Factorial of {number} is {factorial}.")
 
 
+# 11 - Swap Two Variables
+x = 5
+y = 10
 
+print(f"Before swapping : {x}, {y}")
+x, y = y, x
+print(f"After swapping : {x}, {y}")
+
+
+# 12 - Convert all the characters of a string to their opposite letter case( uppercase to lowercase and vice versa)
+str1 = "EmiR mAliK"
+print(str1.swapcase())
+
+# 13 - Generate a random number between 0 and 9
+import random
+print(random.randint(0, 9))
+
+# 14 - Convert Kilometers to Miles
+km = float(input("Enter distance in kilometers: "))
+mile = km * 0.621371
+print(f"Distance in miles is {mile}")
+
+# 15 - Convert km/h to m/s
+speed_kmh = float(input("Enter speed in km/h: "))
+speed_ms = speed_kmh / 3.6
+print(f"Speed in m/s is {speed_ms}")
+
+# 16 - Convert m/s to km/h
+speed_ms = float(input("Enter speed in m/s: "))
+speed_kmh = speed_ms * 3.6
+print(f"Speed in km/h is {speed_kmh}")
+
+# 17 - Convert Celsius To Fahrenheit
+celsius = float(input("Enter temperature in Celsius: "))
+fahrenheit = (celsius * 9/5) + 32
+print(f"Temperature in Fahrenheit is {fahrenheit}")
+
+# 18 - Convert Fahrenheit To Celsius
+fahrenheit = float(input("Enter temperature in Fahrenheit: "))
+celsius = (fahrenheit - 32) * 5/9
+print(f"Temperature in Celsius is {celsius}")
+
+# 19 - Check if a Number is Positive, Negative or 0
+try:
+    number = float(input("Enter a number to check: "))
+    if number > 0:
+        print("The number is positive.")
+    elif number < 0:
+        print("The number is negative.")
+    else:
+        print("The number is zero.")
+except ValueError:
+    print("Invalid input. Please enter a valid number.")
 
