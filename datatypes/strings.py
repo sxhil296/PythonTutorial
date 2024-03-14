@@ -28,7 +28,7 @@ new_names = names.replace("Eren", "Malik")
 print(new_names)
 print(names) #this shows that strings are immutable cause changes didn't occur in the original string but a new copy was formed i.e. new_names
 position = names.find('Levi')  #doesn't give error if absent
-index = names.index("Jay") #raises error if absent i.e. valueError
+# index = names.index("Jay") #raises error if absent i.e. valueError
 
 
 names_list = names.split(', ')
@@ -52,6 +52,19 @@ reversed_str_one = str_one[::-1]
 print(reversed_str_one)
 
 
+name_str = "sAhIl mAliK"
+print(name_str.swapcase())
+print(name_str*5)
+
+spaced_string = "  hello   world"
+stripped_string = spaced_string.strip()
+print(stripped_string)
+
+
+a = "hello"
+print(a)
+del a
+print(a) #NameError: name 'a' is not defined
 
 
 
