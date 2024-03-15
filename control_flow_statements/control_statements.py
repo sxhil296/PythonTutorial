@@ -1,4 +1,4 @@
-# control flow statements - break, continue, pass, else and exit().
+# control flow statements - break, continue, pass, else and exit(). AKA loop control statements
 
 
 # break - used to terminate the loop, even if the loop condition is true. Transfer the control to the statement immediately after the loop
