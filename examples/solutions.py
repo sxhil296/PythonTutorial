@@ -208,3 +208,31 @@ try:
             print(f"2^{x}={result}")
 except ValueError:
     print("Please enter a valid integer.")
+
+# 28 - Find Numbers Divisible by Another Number
+try:
+    n_terms = int(input("Enter the number of terms: "))
+    divisor = int(input("Enter the divisor: "))
+    if n_terms <= 0 or divisor == 0:
+        print("Please enter positive integers and ensure divisor is not zero.")
+    else:
+        print(f"Numbers divisible by {divisor} in the first {num_terms} natural numbers:")
+        for num in range(1, n_terms+1):
+            if num % divisor == 0:
+                print(num)
+except ValueError:
+    print("Please enter a valid integer.")
+
+# 29 - Find the Factors of a Number
+number = int(input("Enter a number to find factors of: "))
+for x in range(1, number+1):
+    if number % x == 0:
+        print(x)
+
+# 30 - Display calendar of the given month and year
+import calendar
+
+yy = int(input("Enter the year (yyyy): "))
+mm = int(input("Enter the month (mm): "))
+
+print(calendar.month(yy, mm))
