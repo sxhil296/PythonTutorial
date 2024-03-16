@@ -137,3 +137,74 @@ try:
 except ValueError:
     print("Invalid input. Please enter a valid number.")
 
+# 20 - Print all Prime Numbers in an Interval
+for x in range(1,21):
+    if x > 1:
+        for i in range(2, x):
+            if (x % i )== 0:
+                break
+        else:
+            print(x)
+
+# 21 -  Check if a Number is Odd or Even
+number = int(input("Enter a number: "))
+if number % 2 == 0:
+    print(f"{number} is even.")
+else:
+    print(f"{number} is odd.")
+
+
+# 22 - Palindrome checker
+user_string = input("Enter a string: ")
+if user_string == user_string[::-1]:
+    print(f"{user_string} is a palindrome")
+else:
+    print(f"{user_string} is not a palindrome.")
+
+# 23 - Display a the multiplication of a number
+table_number = int(input("Enter a number to print the table: "))
+for num in range(1,11):
+    print(f"{table_number} X {num} = {table_number*num}")
+
+# 24 - Check Armstrong Number
+# abcd... = an + bn + cn + dn + ...
+# 153 = 1*1*1 + 5*5*5 + 3*3*3 
+try:
+    num = int(input("Enter a number to check if it's an Armstrong number: "))
+    if num < 0:
+        print("Please enter a positive number.")
+    else:
+        num_digits = len(str(num))
+
+        sum_of_cubes = sum(int(digit) ** num_digits for digit in str(num))
+
+        if num == sum_of_cubes:
+            print(f"{num} is an Armstrong number.")
+        else:
+            print(f"{num} is not an Armstrong number.")
+except ValueError:
+    print("Invalid input. Please enter a valid integer.")
+
+# 25 - Calculate the sum of numbers in the list
+numbers = [1,2,3,4,5,6]
+result = sum(numbers)
+print(f"Sum of the numbers in the list: {result}")
+
+# 26 - Find sum of n natural numbers
+num = int(input("Enter the natural number:"))
+result_of_sum = 0
+for x in range(0, num+1):
+    result_of_sum += x
+print(result_of_sum)
+
+# 27 - Display Powers of 2
+try:
+    num_terms = int(input("Enter the number of terms for powers of 2: "))
+    if num_terms <= 0:
+        print("Please enter a positive number.")
+    else:
+        for x in range(num_terms+1):
+            result = 2 ** x
+            print(f"2^{x}={result}")
+except ValueError:
+    print("Please enter a valid integer.")
