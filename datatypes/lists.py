@@ -13,7 +13,10 @@ my_list[1:4]
 my_list[-1]
 
 # modify
-my_list.append('c') #adds item in the end
+my_list.append('c') #adds single item in the end 
+print(my_list)
+
+my_list.extend([6,7,8])  #adds multiple items at the end of the list
 print(my_list)
 
 my_list.insert(3, 'x')  #inserts at specific index
@@ -114,3 +117,35 @@ print(squares)
 evens = [item for item in nums if item%2==0]
 print(evens)
 
+
+# finding min, max, avg, sum of a list
+my_list_one = [10, 20, 30, 40, 50]
+
+# Minimum value
+min_value = min(my_list_one)
+print("Minimum value:", min_value)
+
+# Maximum value
+max_value = max(my_list_one)
+print("Maximum value:", max_value)
+
+# Average value
+avg_value = sum(my_list_one) / len(my_list_one)
+print("Average value:", avg_value)
+
+# Sum of all elements
+sum_value = sum(my_list_one)
+print("Sum of all elements:", sum_value)
+
+
+# Sort the list in ascending order
+sorted_list_asc = sorted(my_list_one)
+print("Sorted list (ascending):", sorted_list_asc)
+
+# Sort the list in descending order
+sorted_list_desc = sorted(my_list_one, reverse=True)
+print("Sorted list (descending):", sorted_list_desc)
+
+random_list = [1,2,3,'b','c']
+sum_result = sum(random_list)
+# print(sum_result) doesn't work, only works when elements are of numeric data types
