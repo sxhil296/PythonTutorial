@@ -115,3 +115,17 @@ def area_and_circumference(r):
 a, c = area_and_circumference(7)
 print(f"Area : {a:.2f}")
 print(f"Circumference : {c:.2f}")
+
+
+
+# function with default parameter
+def say_hello(name="World"):
+    return f"Hello, {name}!"
+
+print(say_hello("John"))
+print(say_hello())
+
+
+# lambda function or anonymous function - functions without name - often used when you need a simple function for a short period and don't want to define a full function using the def keyword
+cube = lambda x: x ** 3
+print(cube(3))
