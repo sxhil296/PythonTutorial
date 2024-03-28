@@ -45,11 +45,16 @@ In this example:
 
 Functions are standalone blocks of code, while methods are functions associated with objects in object-oriented programming.'''
 
+
+# a basic function syntax
 def greeting():
     print("Hello, World!")
 
 greeting()
 
+#? NOTE : avoid using 'print()' inside function definition (for flexibility, testing and debugging, reusability of code, etc), use 'return' instead
+
+# a function with a parameter
 def greet(name):
     return f"Hello, {name}!"
 
@@ -58,4 +63,55 @@ print(result)
 
 
 
+# a function to calculate the square of a number
+def find_square(number):
+    return number**2
 
+result = find_square(5)
+print(result)
+
+
+
+# a function to calculate the square of a number with user input
+def find_square_user_input():
+    num = int(input("Enter a number: "))
+    return num**2
+
+answer = find_square_user_input()
+print(f"The square of your number is {answer}")
+
+
+
+
+# function with multiple parameters
+def find_sum(a, b):
+    return a * b
+
+print(find_sum(3, 4))
+
+
+
+
+# polymorphism(cheez ek, kaam anek) in functions
+# function which multiply two numbers and strings as well
+def multiply(p1, p2):
+    return p1 * p2
+
+print(multiply(3, 4))
+print(multiply('a', 7))
+print(multiply(7, 'h'))
+
+
+
+# function returning multiple values
+# area and circumference of a circle given its radius
+import math
+def area_and_circumference(r):
+    area = math.pi * r ** 2
+    circumference = 2 * math.pi * r
+    return area, circumference
+
+# print(area_and_circumference(7))
+a, c = area_and_circumference(7)
+print(f"Area : {a:.2f}")
+print(f"Circumference : {c:.2f}")
