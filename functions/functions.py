@@ -45,10 +45,17 @@ In this example:
 
 Functions are standalone blocks of code, while methods are functions associated with objects in object-oriented programming.'''
 
+def greeting():
+    print("Hello, World!")
+
+greeting()
+
 def greet(name):
     return f"Hello, {name}!"
 
 result = greet("Sahil")
 print(result)
+
+
 
 
