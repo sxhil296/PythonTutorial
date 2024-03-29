@@ -129,3 +129,77 @@ print(say_hello())
 # lambda function or anonymous function - functions without name - often used when you need a simple function for a short period and don't want to define a full function using the def keyword
 cube = lambda x: x ** 3
 print(cube(3))
+
+# lambda function to calculate the square of the sum of two numbers a and b
+square_sum = lambda a, b:(a + b) ** 2
+print(square_sum(5, 6))
+
+
+# function with *args (variable number of arguments)
+# '*' indicates that the number of args is variable 
+# use '*args" for better code readability
+# def sum_all(*args):
+#     return sum(args)
+def sum_all(*nums):
+    print(*nums)
+    # print(type(*nums)) gives error
+    print(nums)
+    print(type(nums)) #tuple
+    return sum(nums)
+
+print(f"Sum : {sum_all(1,2,3)}")
+
+
+def  multiply_numbers(*args):
+    for i in args:
+        print(i*2)
+    
+multiply_numbers(1,2,3)
+
+
+# function with **kwargs (keyword arguments)
+# often used in situations where you need to pass multiple optional arguments to a function and you want to pass them in the form of key-value pairs.
+
+def print_details(**kwargs):
+    print(kwargs)
+    print(type(kwargs)) #dict
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
+
+print_details(name="John", age=30, city="New York")
+print_details(name="Shaktiman", power="Lasers", city="Mumbai")
+
+
+
+# function with yield
+# useful for scenarios where you need to generate a sequence of values without storing them all in memory at once
+# a generator function that yields even numbers upto a limit
+
+def generate_even_numbers(limit):
+    for i in range(0, limit+1):
+        if i % 2 == 0:
+            # return i
+            # print(i)
+            yield i
+
+gen = generate_even_numbers(9)
+for x in gen:
+    print(x)
+
+
+'''
+return: Think of return as a function that gives you a single result and then says, "I'm done." Once it gives you the result, it doesn't do anything else.
+
+yield: On the other hand, yield is like a function that can give you multiple results one after the other. It pauses after each result and says, "I'll give you more when you ask for it." It remembers where it paused so it can continue from there later.
+'''
+
+
+# recursive function - a function which calls itself from within
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
+    
+print(factorial(5))
+
