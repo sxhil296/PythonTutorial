@@ -88,3 +88,4 @@ calc = Calculator()
 print(calc.add(2, 3))  # Output: 5
 print(calc.add(2))     # Output: 2
 ```
+## Abstraction
