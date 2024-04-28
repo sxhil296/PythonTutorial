@@ -66,12 +66,12 @@ my_car.stop()
 - In Python, polymorphism is achieved through method overriding  and method overloading .
 
 ###  Types of polymorphism
-1. **Method Overloading** - defining multiple methods with the same name but different parameters.
-2. **Method Overriding** - redefining a method in the subclass with same name and parameters.
+1. **Method Overloading** - defining multiple methods with the same name but different parameters. aka compile time polymorphism
+2. **Method Overriding** - redefining a method in the subclass with same name and parameters. aka run time polymorphism
 
 
 # NOTE : 
-- Python does not support method overloading in the traditional sense as seen in languages like Java or C++. In those languages, we can have multiple methods with the same name but different parameters, and the correct method is chosen based on the number or types of parameters passed.
+- Python does not support method overloading(compile time polymorphism) in the traditional sense as seen in languages like Java or C++. In those languages, we can have multiple methods with the same name but different parameters, and the correct method is chosen based on the number or types of parameters passed.
 
 - In Python, we can only have one method with a particular name in a class. If we define multiple methods with the same name, the last method definition will override the previous ones. Python does not consider the number or types of parameters when determining which method to call.
 

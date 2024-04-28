@@ -12,4 +12,20 @@ class Animal():
 # derived class
 class Dog(Animal):
     def speak(self):
-        return f"{se}"
+        return f"{self.name} says Woof!"
+    
+# derived class
+class Cat(Animal):
+    def speak(self):
+        return f"{self.name} says Meow!"
+    
+
+
+# object or instance creation
+dog = Dog("Dog")
+cat = Cat("Cat")
+
+# call the speak method
+print(dog.speak())
+print(cat.speak())
+
