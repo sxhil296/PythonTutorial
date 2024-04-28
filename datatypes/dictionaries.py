@@ -12,7 +12,7 @@ print(my_dict)
 print(type(my_dict))
 print(type({}))
 
-print(my_dict["one"]) #gives error if absent
+print(my_dict["one"]) #gives error if absent"
 
 
 key_list = my_dict.keys()
