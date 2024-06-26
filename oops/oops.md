@@ -89,3 +89,12 @@ print(calc.add(2, 3))  # Output: 5
 print(calc.add(2))     # Output: 2
 ```
 ## Abstraction
+- it involves hiding the complex implementation details and showing only the essential features of the object
+
+- it simplifies the problem by focusing on the relevant parts
+  
+- **Abstract Class**: A class that contains one or more abstract methods.
+  
+- **Abstract Method**: A method that is declared, but contains no implementation.
+  
+- **Concrete Class**: A class that derives from the abstract class and implements the abstract methods.
