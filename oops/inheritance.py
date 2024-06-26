@@ -1,31 +1,24 @@
-# Inheritance is a key concept in OOP where a new class (subclass or derived class) can inherit attributes and methods from an existing class (superclass or base class).
+
+#Inheritance is a mechanism where a new class inherits attributes and methods from an existing class. 
+#It promotes code reuse and establishes a relationship between classes.
 
 
-# Base class
-class Animal():
+class Animal: #parent class
     def __init__(self, name):
         self.name = name
 
-        def speak(self):
-            raise NotImplementedError("Subclass must implement this method")
-        
-# derived class
-class Dog(Animal):
+    def speak(self):
+        pass
+
+class Dog(Animal): #child class
     def speak(self):
         return f"{self.name} says Woof!"
-    
-# derived class
-class Cat(Animal):
+
+class Cat(Animal): #child class
     def speak(self):
         return f"{self.name} says Meow!"
-    
 
-
-# object or instance creation
-dog = Dog("Dog")
-cat = Cat("Cat")
-
-# call the speak method
-print(dog.speak())
-print(cat.speak())
-
+dog = Dog("Buddy")
+cat = Cat("Whiskers")
+print(dog.speak())  # Output: Buddy says Woof!
+print(cat.speak())  # Output: Whiskers says Meow!

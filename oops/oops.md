@@ -51,7 +51,8 @@ my_car.stop()
 4. Abstraction
 
 ## Encapsulation
-- bundling of data (attributes) and methods (functions) that operate on that data into a single unit (class)
+-  bundling data (attributes) and methods (functions) that operate on the data into a single unit, or class.
+-  restricts direct access to some of the object's components, which can help prevent accidental interference and misuse.
 - helps in data hiding and protecting the internal state of an object from outside interference
 - In Python, encapsulation can be achieved by using private variables and methods, indicated by a leading double underscore (`__`).
 
