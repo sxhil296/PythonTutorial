@@ -1,4 +1,3 @@
-
 #Inheritance is a mechanism where a new class inherits attributes and methods from an existing class. 
 #It promotes code reuse and establishes a relationship between classes.
 

@@ -1,5 +1,4 @@
 #Encapsulation is the practice of bundling data (attributes) and methods (functions) that operate on the data into a single unit, or class. 
-
 #It restricts direct access to some of the object's components, which can help prevent accidental interference and misuse.
 
 class BankAccount:
