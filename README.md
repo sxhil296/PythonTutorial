@@ -29,15 +29,8 @@ Contributions are appreciated! If you'd like to contribute to this Python tutori
 6. Push to your forked repository: `git push origin tutorial-topic`.
 7. Submit a pull request to the main repository's `main` branch.
 
-Our team will review your pull request and provide feedback. Once approved, your tutorial will be merged into the main repository.
+Your pull request will be reviewed and feedback will be provided. Once approved, your tutorial will be merged into the main repository.
 
-## Resources
-
-- [Official Python Website](https://www.python.org/)
-- [Python Documentation](https://docs.python.org/)
-- [Python Package Index (PyPI)](https://pypi.org/)
-- [Codecademy Python Course](https://www.codecademy.com/learn/learn-python-3)
-- [Real Python](https://realpython.com/)
 
 ## License
 
